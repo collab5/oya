@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><!-- Timer page - powered by TimerMo.com --><meta http-equiv="refresh" content="0;url=https://www.timermo.com"><title>Timer</title></head><body>
+<div class="oya-live-clock" aria-label="Jam realtime">
+  <span class="clock-label">WAKTU SEKARANG</span>
+  <span id="oyaClock">00:00:00</span>
+  <span id="oyaDate">Memuat tanggal...</span>
+</div>
+<style>
+.oya-live-clock{position:fixed;top:22px;right:22px;z-index:9999;min-width:190px;padding:14px 18px;border:1px solid rgba(170,80,255,.55);border-radius:16px;background:rgba(5,5,10,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 0 28px rgba(130,40,255,.25),inset 0 0 18px rgba(255,30,80,.06);color:#fff;text-align:center;font-family:inherit}
+.oya-live-clock .clock-label{display:block;margin-bottom:4px;color:#b77cff;font-size:10px;font-weight:800;letter-spacing:.18em}
+#oyaClock{display:block;font-size:clamp(24px,4vw,34px);line-height:1;font-weight:900;letter-spacing:.08em;text-shadow:0 0 14px rgba(175,70,255,.75)}
+#oyaDate{display:block;margin-top:7px;color:rgba(255,255,255,.68);font-size:11px}
+@media(max-width:600px){.oya-live-clock{top:12px;right:12px;min-width:145px;padding:10px 12px;border-radius:12px}.oya-live-clock .clock-label{font-size:8px}#oyaClock{font-size:22px}#oyaDate{font-size:9px}}
+</style>
+<script>
+(function(){
+ const c=document.getElementById('oyaClock'),d=document.getElementById('oyaDate'); if(!c||!d)return;
+ function tick(){const n=new Date();c.textContent=n.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});d.textContent=n.toLocaleDateString('id-ID',{weekday:'long',day:'2-digit',month:'long',year:'numeric'});}
+ tick();setInterval(tick,1000);
+})();
+</script>
+
+</body></html>

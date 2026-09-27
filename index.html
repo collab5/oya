@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OYA COMUNITAS</title>
+        <meta name="description"
+              content="OYA COMUNITAS — ruang berkumpul, berbagi, belajar, berkarya, dan berkembang bersama.">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Syne:wght@700;800&display=swap"
+              rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="oya-scroll-progress" aria-hidden="true"><i id="oyaScrollProgress"></i></div>
+        <div class="oya-floating-orb" aria-hidden="true"></div>
+        <!-- ====================== TOP BAR ====================== -->
+        <nav class="topbar">
+            <a class="brand" href="#hero">OYA<span>/</span>COMUNITAS</a>
+            <div class="nav-index">
+                <a href="#hero">Home</a>
+                <a href="#community">COMUNITAS</a>
+                <a href="#projects">Aktivitas</a>
+                <a href="#initiate">Gabung</a>
+            </div>
+        </nav>
+        <!-- ====================== 01 HERO ====================== -->
+        <section class="hero" id="hero">
+            <div class="hero-kicker">OYA KOMUNITAS • EST. 2026</div>
+            <h1 class="hero-title">OYA</h1>
+            <div class="hero-copy">
+                <p>Tempat berkumpulnya orang-orang yang suka bermain dan ngobrol, belajar bareng, dan bikin internet sedikit lebih menarik.</p>
+                <div class="hero-actions">
+                    <a class="community-btn primary" href="#initiate">GABUNG OYA KOMUNITAS <span>↗</span></a>
+                    <a class="community-btn ghost" href="#community">LIHAT KOMUNITAS</a>
+                </div>
+            </div>
+            <svg class="string-svg"
+                 id="stringSvg"
+                 preserveAspectRatio="none"
+                 aria-hidden="true">
+                <path class="string-path" id="stringPath"></path>
+                <circle class="string-anchor" id="anchorL" r="5"></circle>
+                <circle class="string-anchor" id="anchorR" r="5"></circle>
+                <circle class="string-grip"   id="grip"    r="7"></circle>
+            </svg>
+            <div class="hero-foot">
+                <span class="mono-label">CREATIVE COMMUNITY / INDONESIA</span>
+                <p>Belajar • berbagi • cari teman satu frekuensi.</p>
+            </div>
+            <div class="hero-hint">[ gerakkan cursor untuk mengganggu dunia ]</div>
+        </section>
+
+        <!-- ====================== COMMUNITY ====================== -->
+        <section class="community-section" id="community">
+            <div class="community-orbit" aria-hidden="true"></div>
+            <div class="community-grid">
+                <div class="community-intro reveal-on-scroll">
+                    <span class="mono-label">02 // COMMUNITY CORE</span>
+                    <h2>Bukan cuma <i>server.</i><br>Ini tempat <span>berkembang.</span></h2>
+                    <p>Gabung dengan komunitas yang dibuat untuk ngobrol, berbagi karya.</p>
+                    <div class="school-explainer">
+                        <div><b>APA ITU OYA KOMUNITAS?</b><span>Komunitas untuk pelajar dan kreator yang ingin belajar hal digital, bertukar ide, menemukan teman, dan membangun karya bersama.</span></div>
+                        <div><b>APA YANG BISA DILAKUKAN?</b><span>Ikut diskusi, main bareng, mengikuti aktivitas komunitas, serta menunjukkan hasil karya sendiri.</span></div>
+                        <div><b>KENAPA BERGABUNG?</b><span>Karena belajar sendirian itu kadang seperti bicara dengan tembok. Di sini kamu punya ruang untuk bertanya, mencoba, dan berkembang bersama.</span></div>
+                    </div>
+                    <div class="community-stats">
+                        <div class="stat-card">
+                            <span class="stat-label">MEMBER BERGABUNG</span>
+                            <strong class="member-counter" id="memberCount" data-members="49">0</strong>
+                            <small>anggota komunitas</small>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">STATUS</span>
+                            <strong class="pulse-status"><i></i> ACTIVE</strong>
+                            <small>komunitas berjalan</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="community-features">
+                    <article class="feature-card reveal-on-scroll" data-tilt>
+                        <span class="feature-no">01</span>
+                        <div class="feature-icon">⌁</div>
+                        <h3>NGOBROL</h3>
+                        <p>Diskusi santai, cari teman, dan berbagi hal yang sedang kamu kerjakan.</p>
+                    </article>
+                    <article class="feature-card reveal-on-scroll" data-tilt>
+                        <span class="feature-no">02</span>
+                        <div class="feature-icon">✦</div>
+                        <h3>BELAJAR</h3>
+                        <p>desain, editing, dan skill digital dari anggota komunitas.</p>
+                    </article>
+                    <article class="feature-card reveal-on-scroll" data-tilt>
+                        <span class="feature-no">03</span>
+                        <div class="feature-icon">◈</div>
+                        <h3>BERKARYA</h3>
+                        <p>Bangun proyek bersama dan tunjukkan karya tanpa perlu jadi manusia sempurna.</p>
+                    </article>
+                    <article class="feature-card reveal-on-scroll" data-tilt>
+                        <span class="feature-no">04</span>
+                        <div class="feature-icon">↯</div>
+                        <h3>EVENT</h3>
+                        <p>Challenge, event komunitas, dan aktivitas rutin supaya server tidak menjadi museum.</p>
+                    </article>
+                </div>
+            </div>
+            <div class="community-marquee" aria-hidden="true">
+                <div>JOIN • CREATE • SHARE • LEARN • CONNECT • JOIN • CREATE • SHARE • LEARN • CONNECT • </div>
+            </div>
+        </section>
+        <!-- ====================== 03 MATRIX ====================== -->
+        <section class="matrix-wrap" id="projects">
+            <div class="section-head">
+                <h2>OYA <i>GALLERY</i></h2>
+                <p>6 visual moments dari OYA KOMUNITAS. Setiap gambar mewakili suasana belajar, berkarya, dan kebersamaan di dalam komunitas.</p>
+            </div>
+            <div class="matrix" id="matrix">
+                <!-- OYA gallery: 6 visual moments -->
+                <div class="cell" tabindex="0" role="button" aria-label="Project Helix">
+                    <div class="cell-media" style="background-image:url('images/1.png')"></div>
+                    <div class="cell-num">01</div>
+                    <div class="cell-name"></div>
+                    <div class="cell-detail"></div>
+                    <div class="cell-cat">Brand / Code</div>
+                </div>
+                <div class="cell" tabindex="0" role="button" aria-label="Project Drift">
+                    <div class="cell-media" style="background-image:url('images/2.png')"></div>
+                    <div class="cell-num">02</div>
+                    <div class="cell-name"></div>
+                    <div class="cell-detail"></div>
+                    <div class="cell-cat">Web / Type</div>
+                </div>
+                <div class="cell" tabindex="0" role="button" aria-label="Project Onyx">
+                    <div class="cell-media" style="background-image:url('images/3.png')"></div>
+                    <div class="cell-num">03</div>
+                    <div class="cell-name"></div>
+                    <div class="cell-detail"></div>
+                    <div class="cell-cat">Product / UX</div>
+                </div>
+                <div class="cell" tabindex="0" role="button" aria-label="Project Pulse">
+                    <div class="cell-media" style="background-image:url('images/4.png')"></div>
+                    <div class="cell-num">04</div>
+                    <div class="cell-name"></div>
+                    <div class="cell-detail"></div>
+                    <div class="cell-cat">Sound / Visual</div>
+                </div>
+                <div class="cell" tabindex="0" role="button" aria-label="Project Vellum">
+                    <div class="cell-media" style="background-image:url('images/5.png')"></div>
+                    <div class="cell-num">05</div>
+                    <div class="cell-name"></div>
+                    <div class="cell-detail"></div>
+                    <div class="cell-cat">Editorial</div>
+                </div>
+                <div class="cell" tabindex="0" role="button" aria-label="Project Signal">
+                    <div class="cell-media" style="background-image:url('images/6.png')"></div>
+                    <div class="cell-num">06</div>
+                    <div class="cell-name"></div>
+                    <div class="cell-detail"></div>
+                    <div class="cell-cat">Campaign</div>
+                </div>
+            </div>
+        </section>
+        <!-- ====================== 04 LENTICULAR ====================== -->
+        <section class="reveal" id="reveal">
+            <div class="reveal-cap">
+                <span class="mono-label">Lenticular Print // Live</span>
+                <h2>SWEEP TO <i>FLIP</i> THE FRAME</h2>
+                <p style="font-size:.64rem;
+                          letter-spacing:.22em;
+                          text-transform:uppercase;
+                          color:var(--accent-1);
+                          margin-top:10px">[ run the cursor past both edges for a full flip ]</p>
+            </div>
+            <div class="lenti-stage" id="lentiStage">
+                <div class="lenti" id="lenti" aria-hidden="true"
+                     data-front="images/dt.webp"
+                     data-back="images/11.png"></div>
+            </div>
+        </section>
+        <!-- ====================== 05 JOIN / INITIATE ====================== -->
+        <footer class="initiate" id="initiate">
+            <div class="join-motion" aria-hidden="true">
+                <div class="join-backdrop-text">GABUNG OYA KOMUNITAS</div>
+                <div class="join-particles"></div>
+                <div class="join-gallery" id="joinGallery">
+                    <div class="join-photo" data-depth="0.35"><img src="images/1.png" alt=""></div>
+                    <div class="join-photo" data-depth="0.55"><img src="images/2.png" alt=""></div>
+                    <div class="join-photo" data-depth="0.25"><img src="images/3.png" alt=""></div>
+                    <div class="join-photo" data-depth="0.65"><img src="images/4.png" alt=""></div>
+                    <div class="join-photo" data-depth="0.45"><img src="images/5.png" alt=""></div>
+                    <div class="join-photo" data-depth="0.75"><img src="images/6.png" alt=""></div>
+                </div>
+            </div>
+            <div class="initiate-inner">
+                <span class="mono-label join-kicker">05 // READY?</span>
+                <h2 class="scatter" id="scatter">//GABUNG OYA KOMUNITAS//</h2>
+                <div class="oya-join-badge"><i></i> OYA KOMUNITAS • COMMUNITY ONLINE</div>
+                <div class="join-school-label">GABUNG OYA KOMUNITAS <span>•</span></div>
+                <div class="sub-wrap" id="subWrap">
+                    <form class="subscribe" id="subscribe" novalidate>
+                        <!--<input type="email"
+                               class="sub-input"
+                               id="subEmail"
+                               placeholder="you@studio.com"
+                               aria-label="Email address"
+                               required>-->
+                        <a href="https://discord.gg/HJ57pN7p8"target="_blank"rel="noopener noreferrer"class="sub-btn">GABUNG SEKARANG ↗</a>
+                    </form>
+                    <div class="sub-note" id="subNote">Klik untuk bergabung dan tambah angka member di browser ini.</div>
+                </div>
+            </div>
+            <div class="sig-foot">
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
