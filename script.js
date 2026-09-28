@@ -609,7 +609,7 @@
 
         /* ---- member counter: configurable seed + local browser joins ---- */
         if (countEl) {
-            var seed = parseInt(countEl.getAttribute('data-members') || '49', 10);
+            var seed = parseInt(countEl.getAttribute('data-members') || '83', 10);
             var joined = parseInt(localStorage.getItem('oyaHighSchoolJoined') || '0', 10);
             var target = seed + (joined ? 1 : 0);
             var shown = 0;
